@@ -6,11 +6,10 @@
 /*   By: adi-marc <adi-marc@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 14:32:03 by adi-marc          #+#    #+#             */
-/*   Updated: 2025/09/05 14:41:26 by adi-marc         ###   ########.fr       */
+/*   Updated: 2025/09/09 10:33:41 by adi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Implement time utilities */
 #include "../includes/philo.h"
 
 /* Get the current time in milliseconds */

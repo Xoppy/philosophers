@@ -6,11 +6,10 @@
 /*   By: adi-marc <adi-marc@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 14:31:57 by adi-marc          #+#    #+#             */
-/*   Updated: 2025/09/05 14:41:22 by adi-marc         ###   ########.fr       */
+/*   Updated: 2025/09/09 10:33:37 by adi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Philosopher routine */
 #include "../includes/philo.h"
 
 /* Main loop executed by each philosopher */

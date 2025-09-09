@@ -6,7 +6,7 @@
 /*   By: adi-marc <adi-marc@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 14:31:49 by adi-marc          #+#    #+#             */
-/*   Updated: 2025/09/05 14:41:16 by adi-marc         ###   ########.fr       */
+/*   Updated: 2025/09/09 10:37:24 by adi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_check_philo_status(t_philo_env *env, int i, int *full_count)
 	return (0);
 }
 
-/* Monitor thread to detect death and meal completion */
+/* Monitor thread to detect death and meal completion 
 void	*ft_monitor(void *arg)
 {
 	t_philo_env	*env;
@@ -62,6 +62,45 @@ void	*ft_monitor(void *arg)
 			ft_request_stop(env);
 			return (NULL);
 		}
+		usleep(500);
+	}
+	return (NULL);
+}*/
+
+static int	ft_monitor_cycle(t_philo_env *env)
+{
+	int	i;
+	int	full_count;
+
+	i = 0;
+	full_count = 0;
+	while (i < env->count)
+	{
+		if (ft_check_philo_status(env, i, &full_count))
+			return (1);
+		i++;
+	}
+	if (env->meals > 0 && full_count == env->count)
+	{
+		ft_request_stop(env);
+		return (1);
+	}
+	return (0);
+}
+
+void	*ft_monitor(void *arg)
+{
+	t_philo_env	*env;
+
+	env = (t_philo_env *)arg;
+	if (env->meals == 0)
+		return (NULL);
+	while (ft_current_time() < env->start_time)
+		usleep(50);
+	while (!ft_is_stopped(env))
+	{
+		if (ft_monitor_cycle(env))
+			return (NULL);
 		usleep(500);
 	}
 	return (NULL);

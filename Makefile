@@ -17,6 +17,7 @@ SRC_FILES = $(SRC_DIR)/main.c \
 		$(SRC_DIR)/philo_routine.c \
 		$(SRC_DIR)/philo_stop.c \
 		$(SRC_DIR)/philo_time.c \
+		$(SRC_DIR)/philo_clean.c \
 
 OBJ_FILES = $(SRC_FILES:.c=.o)
 

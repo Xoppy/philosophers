@@ -6,11 +6,10 @@
 /*   By: adi-marc <adi-marc@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 14:31:52 by adi-marc          #+#    #+#             */
-/*   Updated: 2025/09/05 14:41:18 by adi-marc         ###   ########.fr       */
+/*   Updated: 2025/09/09 10:33:32 by adi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Printing utilities */
 #include "../includes/philo.h"
 
 /* Print the timestamp, philosopher ID and a message */

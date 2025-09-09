@@ -6,11 +6,10 @@
 /*   By: adi-marc <adi-marc@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 14:31:35 by adi-marc          #+#    #+#             */
-/*   Updated: 2025/09/05 14:41:08 by adi-marc         ###   ########.fr       */
+/*   Updated: 2025/09/09 10:33:51 by adi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Start the simulation, wait for threads, and provide the main entry point */
 #include "../includes/philo.h"
 
 /* Set start_time and create philosopher and monitor threads */

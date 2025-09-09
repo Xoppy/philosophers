@@ -6,11 +6,10 @@
 /*   By: adi-marc <adi-marc@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 14:32:00 by adi-marc          #+#    #+#             */
-/*   Updated: 2025/09/05 14:41:24 by adi-marc         ###   ########.fr       */
+/*   Updated: 2025/09/09 10:33:38 by adi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Utilities to set and check the stop flag */
 #include "../includes/philo.h"
 
 /* Set the stop flag to 1 */

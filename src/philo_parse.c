@@ -6,11 +6,10 @@
 /*   By: adi-marc <adi-marc@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 14:31:54 by adi-marc          #+#    #+#             */
-/*   Updated: 2025/09/05 14:41:20 by adi-marc         ###   ########.fr       */
+/*   Updated: 2025/09/09 10:33:34 by adi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Parsing utilities */
 #include "../includes/philo.h"
 
 /* Convert a numeric string to an int; returns -1 on error */
